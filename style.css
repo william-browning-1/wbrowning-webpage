@@ -126,22 +126,26 @@ span{
     font-size: 1.6rem;
 }
 
-.home-img{
-    border-radius: 50%;
+.home-img {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
-.home-img img{
-    position: relative;
-    align-items: center;
-    object-fit: co;
-    width: 32vm;
-    height: 40rem;
+.home-img img {
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--bg-color);
     cursor: pointer;
     transition: 0.2s linear;
 }
+
+
 
 .home-img img:hover{
     transform: scale(1.1);
@@ -302,6 +306,34 @@ span{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--snd-bg-color);
+}
+
+/* Responsive stacking */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;    /* Stack vertically */
+        text-align: center;        /* Center text on small screens */
+    }
+    
+    .about-img img {
+        width: 60vw;               /* Bigger on small screens */
+        max-width: none;           /* Remove max width limit */
+        margin-bottom: 1.5rem;     /* Space between image and text */
+    }
+    
+    .about-content h2, 
+    .about-content h3, 
+    .about-content p {
+        text-align: center;        /* Center text when stacked */
+    }
+}
+
 
 .skills h2{
     margin-bottom: 5rem;
