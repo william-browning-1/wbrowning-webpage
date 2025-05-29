@@ -258,9 +258,11 @@ span{
     .home{
         flex-direction: column;
         margin:5rem 4rem;
+        align-items: center;
     }
     .home .home-content h3{
         font-size: 2.5rem;
+        margin-bottom: 3rem;
     }
 
     .home-content h1{
@@ -314,23 +316,23 @@ span{
     background: var(--snd-bg-color);
 }
 
-/* Responsive stacking */
+
 @media (max-width: 768px) {
     .about {
-        flex-direction: column;    /* Stack vertically */
-        text-align: center;        /* Center text on small screens */
+        flex-direction: column;  
+        text-align: center;       
     }
     
     .about-img img {
-        width: 60vw;               /* Bigger on small screens */
-        max-width: none;           /* Remove max width limit */
-        margin-bottom: 1.5rem;     /* Space between image and text */
+        width: 60vw;               
+        max-width: none;          
+        margin-bottom: 1.5rem;    
     }
     
     .about-content h2, 
     .about-content h3, 
     .about-content p {
-        text-align: center;        /* Center text when stacked */
+        text-align: center;     
     }
 }
 
