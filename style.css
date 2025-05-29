@@ -422,3 +422,29 @@ span{
     align-items: left;
 }
 
+@media (max-width: 768px) {
+    .experience-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .experience-img,
+    .cfia-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .experience-content {
+        margin-top: 2rem;
+    }
+
+    .experience-box h3 {
+        font-size: 2rem;
+    }
+
+    .experience-content p {
+        font-size: 1.4rem;
+    }
+}
