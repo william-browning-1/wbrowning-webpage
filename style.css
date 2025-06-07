@@ -434,11 +434,11 @@ span{
 .experience-img {
     width: 300px;
     height: 300px;
-    object-fit: cover;
+    object-fit: contain;
     flex-shrink: 0; 
 }
 
-.cfia-img{
+.circle-img{
     width: 300px;
     height: 300px;
     object-fit: cover; 
