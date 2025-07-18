@@ -242,10 +242,10 @@ span{
         content: "U-of-M Student"; 
     }
     61%, 80%{ 
-        content: "CyberSecurity Focus"; 
+        content: "2nd Major in Mathematical Sciences"; 
     }
     81%, 100%{ 
-        content: "CS Major"; 
+        content: "Computer Science Major"; 
     }
 }
 @media(max-width: 1000px){
